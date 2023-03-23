@@ -1,0 +1,120 @@
+body{
+    font-family: Rubik;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0px;
+}
+li{
+    display: inline-block;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+nav{
+    background-color: #582A72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a:hover{
+    color: gold;
+    transform: scale(1.05);
+	transition: 2s;
+}
+
+.header-background{
+    height: 45vh;
+}
+.header-background::before{
+    content: "";
+    opacity: 0.25;
+    background-image: url("background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    width: 100vw;
+    height: 50vh; 
+}
+.row h1{
+    color: purple;
+    padding-top: 12vh;
+}
+.row h2{
+    color: purple;
+    padding-top: 5vh;
+}
+h5{
+    color: purple; 
+}
+.row p{
+    color: purple;
+}
+.button{
+    background-color: purple;
+    color: aliceblue;
+    width: 12vw;
+    border-radius: 55%;
+    z-index: 2;
+}
+.button:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+.photo{
+    width: 10vw;
+    border: 2px solid lightblue;
+    border-radius: 30%;
+}
+hr{
+    color: darkblue;
+}
+input, textarea{
+    margin-bottom: 2vh;
+    margin-left: 1.5vw;
+}
+/* #about::before{
+    content: "";
+    opacity: 0.2;
+    background-image: radial-gradient(blue,gold);
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+} */
+#about, #portfolio, #contact{
+    background-color: azure;
+}
+.example{
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+}
+.example:hover{
+	transform: scale(2);
+	transition: 2s;
+}
+
+@media screen and (min-width:400px) and (max-width:920px){
+    .button{
+        width: 24vw;
+    }
+    .photo{
+        width:24vw;
+    }
+}
+
+@media screen and (max-width:400px){
+    .button{
+        width: 30vw;
+    }
+    .photo{
+        width:36vw;
+    }
+}
