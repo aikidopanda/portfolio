@@ -91,10 +91,14 @@ input, textarea{
 .form-control:focus{
     background-color: rgb(255, 255, 102,0.75)
 }
-#about, #portfolio, #contact{
+#about, #portfolio, #skills, #contact{
     background-image: radial-gradient(azure,rgb(255,255,153));
     width: 100vw;
     /* background-color: azure; */
+}
+.skill{
+    width:50%;
+    border: none;
 }
 #contact{
     padding-bottom:10vh;
