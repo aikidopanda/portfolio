@@ -15,6 +15,7 @@
         <a href="index.html" class="fs-5 p-3">Home</a>
         <ul>
             <li><a href="#about" class="fs-5 p-3">About</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1d-h8CLwbEAMtcgKbAgxOnLCyb44ES4hY?usp=sharing" class="fs-5 p-3">CV</a></li>
             <li><a href="#portfolio" class="fs-5 p-3">Portfolio</a></li>
             <li><a href="#skills" class="fs-5 p-3">Skills</a></li>
             <li><a href="#contact" class="fs-5 p-3">Contact</a></li>
@@ -25,7 +26,8 @@
             <h1>Welcome to my Website</h1>
             <p>Hello, my name is Alexey Soroker. I am a beginning full-stack developer, just graduated from Developers Institute in Israel. I am currently looking for a job in Israeli Hi-tech industry.
             </p>
-            <button class="button"><a class="test" href="#portfolio">Look my portfolio</a></button>
+            <a class = "button" href="#portfolio">Look my portfolio</a>
+            <a class = "button" href="https://drive.google.com/drive/folders/1d-h8CLwbEAMtcgKbAgxOnLCyb44ES4hY?usp=sharing">Download my CV</a>
         </div>
     </div>
         <div class="container-fluid" id="about">
@@ -34,26 +36,26 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-3 col-3-md col-1-sm"></div>
-                <div class="col-6 col-6-md col-10-sm">
+                <div class="col-1 col-1-md col-1-sm"></div>
+                <div class="col-10 col-10-md col-10-sm">
                     <div class="row">
                         <div class="col col-4">
-                            <img class="photo img-fluid" src="me.jpg">
+                            <img class="photo img-fluid" src="images/linkedin.jpg">
                         </div>
                         <div class="col col-8">
-                            <p class="text-start">My name Alexey Soroker. I am 34, I am from Moscow, Russia. My first education is historian. I studied in historical department of Higher School of Economics in Moscow
+                            <p class="text-justify">My name Alexey Soroker. I am 34, I am from Moscow, Russia. My first education is historian. I studied in historical department of Higher School of Economics in Moscow
                                 and worked as private teacher in history, helping school and university students to study and to prepare for their exams. 
                                 Since my hobby is computer games, once I started to create mods for them. During several years I became more and more involved in that. 
                                 That's how I found that coding can be interesting and exciting.<br><br>
                                 In October 2022 I moved to Israel, currently I live in Haifa. After I moved, I could no longer do what I did in Russia. 
                                 To my mind, teacher's work is based on eye-to-eye contact and doing it online is much less effective.
-                                That's why In March 2023 I entered the DI courses in Ramat Gan and finished it in July of the same year. I am eager to find my first job in Israeli high-tech and get necessary experience in this industry.
-                                Because technical hard skills seem necessary to react to rapid and frequent changes that happen in the world.
+                                That's why In March 2023 I entered the DI courses in Ramat Gan and finished it in July of the same year. I am eager to find my first job in Israeli high-tech and get necessary experience in this industry,
+                                because technical hard skills seem necessary to react to rapid and frequent changes that happen in the world.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-3-md col-1-sm"></div>
+                <div class="col-1 col-1-md col-1-sm"></div>
             </div>
         </div>
         <div class="container-fluid" id="portfolio">
@@ -61,28 +63,58 @@
                 <h2>My Portfolio</h2><hr>
             </div>
             <div class="row">
-                <div class="col-3 col-3-md col-1-sm">
-    
+                <div class="col-1 col-1-md col-1-sm">
                 </div>
-                <div class="col-6 col-6-md col-10-sm"">
-                    <div class="row">
-                        <div class="col col-6">
-                            <a href="https://github.com/aikidopanda/DI-Bootcamp-Stage1/tree/main/Final-Project"><img src="Miyazaki-main.png" class="img-fluid example"></a>
+                <div class="col-10 col-10-md col-10-sm"">
+                    <div class="row portfolio-row">
+                        <div class="col col-4">
+                            <img src="images/Miyazaki-main.png" class="img-fluid example">
                         </div>
-                        <div class="col col-6">
-                            <a href="https://github.com/aikidopanda/developers_institute/tree/main/Hackathon-2"><img src="Hackathon-2.png" class="img-fluid example"></a>
+                        <div class="col col-8">
+                            <h5>Tribute Page</h5>
+                            <p>This is my project I completed to be enrolled into DI. The task was to create a tribute page devoted to some outstanding person. I have chosen Hayao Miyazaki since I am fond of his works for more than 10 years. Although its simple (I merely knew html and css by that time) I still like it.</p>
+                            <a href = "https://github.com/aikidopanda/DI-Bootcamp-Stage1/tree/main/Final-Project" class="button-detail">View details</a>
+                        </div>
+                    </div>
+                    <div class="row row portfolio-row">
+                        <div class="col col-4">
+                            <img src="images/Hackathon-2.png" class="img-fluid example">
+                        </div>
+                        <div class="col col-8">
+                            <h5>History Jeopardy-based Game</h5>
+                            <p>This is a project I built for one of Hackathons in the DI. Basically, it is a small website good for both education and entertainment. 
+                            This is a game of erudition which can be implemented as form of knowledge control by all teachers, from primary schools to universities. It can be also played just for fun, of course.
+                            To create it, I used node.js for backend and database operations and ejs module to render the website itself</p>
+                            <a href = "https://github.com/aikidopanda/developers_institute/tree/main/Hackathon-2" class="button-detail">View details</a>
+                        </div>
+                    </div>
+                    <div class="row row portfolio-row">
+                        <div class="col col-4">
+                            <img src="images/Main-menu.png" class="img-fluid example">
+                            <img src="images/game.png" class="img-fluid example">
+                        </div>
+                        <div class="col col-8">
+                            <h5>HoMM-inspired Card Game</h5>
+                            <p>Being a gamer since I was a teenager, I have been wondered how is it to build your own computer game. So, when I learned python to some extent, I did it via pygame module.
+                            This project is a card duel game, inspired by Heroes of Might and Magic game series. It currently has 4 factions with different playstyle, similar to original game factions. There are 28 cards in the game. 
+                            Most of them have their unique abilities, from simple ones (like ranged/flying unit behaviour) to complicated synergies. The core game mechanics have been tested and balanced.
+                            </p>
+                            <p>Later I used python web-sockets to bring the game into multiplayer. You can find the link to a server file as well, if you want to create your own server.
+                            One of the github links below also contains full guide to all cards and factions, currently presented in the game. 
+                            </p>
+                            <p>The work on this project is still in progress, cause I am going to add new factions, new cards and some GUI improvements.</p>
+                            <a href = "https://github.com/aikidopanda/Final-Project-Client" class="button-detail">Client</a>
+                            <a href = "https://github.com/aikidopanda/Final-Project-Server" class="button-detail">Server</a>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col col-6">
-                            <a href="https://github.com/aikidopanda/Final-Project-Client"><img src="Main-menu.png" class="img-fluid example"></a>
+                        <div class="col col-4">                      
                         </div>
-                        <div class="col col-6">
-                            <a href="https://github.com/aikidopanda/Final-Project-Client"><img src="game.png" class="img-fluid example"></a>
+                        <div class="col col-8">
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-3-md col-1-sm">   
+                <div class="col-1 col-1-md col-1-sm">   
                 </div>
             </div>
         </div>
@@ -93,35 +125,35 @@
                 <div class="col-6 col-6-md col-10-sm">
                     <div class="row">
                         <div class="col-2 col-4">
-                            <img src="python.png" class="img-fluid skill">
+                            <img src="images/python.png" class="img-fluid skill" title="python">
                         </div>
                         <div class="col-2 col-4">
-                            <img src="js.png" class="img-fluid skill">
+                            <img src="images/js.png" class="img-fluid skill" title="javascript">
                         </div>
                         <div class="col-2 col-4">
-                            <img src="react.png" class="img-fluid skill">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2 col-4">
-                            <img src="nodejs.png" class="img-fluid skill">
-                        </div>
-                        <div class="col-2 col-4">
-                            <img src="html.png" class="img-fluid skill">
-                        </div>
-                        <div class="col-2 col-4">
-                            <img src="css.png" class="img-fluid skill">
+                            <img src="images/react.png" class="img-fluid skill" title="react">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-2 col-4">
-                            <img src="django.png" class="img-fluid skill">
+                            <img src="images/nodejs.png" class="img-fluid skill" title="nodejs">
                         </div>
                         <div class="col-2 col-4">
-                            <img src="rest.png" class="img-fluid skill">
+                            <img src="images/html.png" class="img-fluid skill" title="html5">
                         </div>
                         <div class="col-2 col-4">
-                            <img src="lua.png" class="img-fluid skill">
+                            <img src="images/css.png" class="img-fluid skill" title="css3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-4">
+                            <img src="images/django.png" class="img-fluid skill" title="django">
+                        </div>
+                        <div class="col-2 col-4">
+                            <img src="images/rest.png" class="img-fluid skill" title="django rest">
+                        </div>
+                        <div class="col-2 col-4">
+                            <img src="images/lua.png" class="img-fluid skill" title="lua">
                         </div>
                     </div>
                 </div>

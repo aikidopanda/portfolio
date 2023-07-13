@@ -1,145 +1,253 @@
-body{
+body {
     font-family: Rubik;
 }
-ul{
+
+ul {
     list-style: none;
     margin-bottom: 0px;
 }
-li{
+
+li {
     display: inline-block;
 }
-a{
+
+a {
     color: aliceblue;
     text-decoration: none;
 }
-nav, footer{
+
+nav,
+footer {
     background-color: #582A72;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-nav a:hover, footer a:hover{
+
+nav a:hover,
+footer a:hover {
     color: gold;
     transform: scale(1.05);
-	transition: 1.5s;
+    transition: 1.5s;
 }
 
-.header-background{
+.header-background {
     height: 47vh;
 }
-h1,h2,h5,p{
-    color:purple;
+
+h1,
+h2,
+h5,
+p {
+    color: purple;
 }
-.header-background::before{
+
+.project-name{
+    background-color: #582A72;
+    color: aliceblue;
+    width: 20vw;
+    margin: 5vh auto;
+    font-size: 2.5vh;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    padding: 1vh 0;
+}
+
+.header-background::before {
     content: "";
     opacity: 0.25;
-    background-image: url("background.webp");
+    background-image: url("images/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     width: 100vw;
-    height: 50vh; 
+    height: 50vh;
 }
-.row h1{
+
+.row h1 {
     padding-top: 12vh;
 }
-.row h2{
+
+.row h2 {
     padding-top: 8vh;
+    position: relative;
+    /* transition: transform 2s ease-out; */
 }
-.button{
+
+.row h2:hover{
+    animation: movetext 2s forwards;
+}
+
+@keyframes movetext {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50vw)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.button, .button-detail {
     background-color: purple;
     color: aliceblue;
     width: 12vw;
-    border-radius: 55%;
+    border-radius: 5%;
     z-index: 2;
-    margin-bottom:2vh;
 }
-.button:hover{
+
+.button{
+    margin-left: 2vw;
+}
+
+.button:hover, .button-detail:hover {
     transform: scale(1.25);
     background-color: gold;
     border: 1px solid maroon;
     transition: 1.5s;
 }
-.button a:hover{
+
+.button-detail {
+    padding: 0.5vw 1vh;
+    margin-bottom: 2vh;
+}
+
+a:hover {
     color: maroon;
     transition: 1.5s;
 }
-.button-submit:hover{
+
+.button-submit:hover {
     transform: scale(1.25);
-    background-color: rgb(204,204,0);
+    background-color: rgb(204, 204, 0);
     color: maroon;
     border: 2px solid maroon;
     transition: 1.5s;
 }
-.photo{
-    width: 10vw;
+
+.photo {
+    width: 18vw;
     border: 2px solid lightblue;
     border-radius: 30%;
 }
-hr{
+
+hr {
     color: darkblue;
 }
-input, textarea{
+
+input,
+textarea {
     margin-bottom: 2vh;
     margin-left: 1.5vw;
 }
-.form-control:focus{
-    background-color: rgb(255, 255, 102,0.75)
+
+.form-control:focus {
+    background-color: rgb(255, 255, 102, 0.75)
 }
-#about, #portfolio, #skills, #contact{
-    background-image: radial-gradient(azure,rgb(255,255,153));
+
+.portfolio-row{
+    margin-bottom: 5vh;
+}
+
+#about,
+#portfolio,
+#skills,
+#contact {
+    background-image: radial-gradient(azure, rgb(255, 255, 153));
     width: 100vw;
     /* background-color: azure; */
 }
-.skill{
-    width:50%;
+
+.skill {
+    width: 50%;
     border: none;
+    animation: pulse 2s infinite;
+    transform: scale(1);
 }
-#contact{
-    padding-bottom:10vh;
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
 }
-.example{
+
+#contact {
+    padding-bottom: 10vh;
+}
+
+.example {
     margin-right: 2vw;
     margin-bottom: 2vh;
     border: 1px solid black;
 }
-.example:hover{
-	transform: scale(2);
-	transition: 2s;
+
+.example:hover {
+    transform: scale(2) translateX(10vw);
+    transition: 2s;
 }
 
-@media screen and (min-width:450px) and (max-width:920px){
-    .button{
+@media screen and (min-width:450px) and (max-width:920px) {
+    .button {
         width: 24vw;
     }
-    .photo{
+
+    .photo {
         width: 100%;
+    }
+
+    .example:hover {
+        transform: scale(2.5) translateX(10vw);
+        transition: 2s;
+    }
+
+    .header-background{
+        height: 43vh;
     }
 }
 
-@media screen and (max-width:450px){
-    .button{
-        width: 30vw;
+@media screen and (max-width:450px) {
+    .button {
+        width: 45vw;
     }
-    .col-1-sm{
+
+    .col-1-sm {
         width: 10vw;
     }
-    .col-10-sm{
+
+    .col-10-sm {
         width: 80vw;
     }
-    .photo{
+
+    .photo {
         width: 100%;
     }
-    .p-3{
-        padding-left: 0.1rem!important;
-        padding-right: 0.1rem!important;
+
+    .p-3 {
+        padding-left: 0.1rem !important;
+        padding-right: 0.1rem !important;
     }
-    .fs-5{
-        font-size: 0.9rem!important;
+
+    .fs-5 {
+        font-size: 0.9rem !important;
+    }
+
+    .example:hover {
+        transform: scale(4) translateX(10vw);
+        transition: 2s;
     }
 }
