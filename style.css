@@ -187,7 +187,7 @@ textarea {
 }
 
 .example:hover {
-    transform: scale(2) translateX(10vw);
+    transform: scale(2) translateX(5vw);
     transition: 2s;
 }
 
@@ -237,7 +237,7 @@ textarea {
     }
 
     .example:hover {
-        transform: scale(4) translateX(10vw);
+        transform: scale(4) translateX(5vw);
         transition: 2s;
     }
 }
