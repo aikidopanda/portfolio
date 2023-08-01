@@ -178,6 +178,14 @@ textarea {
     transition: 2s;
 }
 
+.thankyou_message{
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 3px;
+    margin: 4px;
+    border: 1px solid black;
+}
+
 @media screen and (min-width:450px) and (max-width:920px) {
     .button {
         width: 24vw;

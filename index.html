@@ -172,10 +172,15 @@
                                 <p class="fs-5">Write to me</p>
                             </div>
                             <div class="col col-8">
-                                <input type="text" class="form-control" placeholder="Enter your name" required>
-                                <input type="email" class="form-control" placeholder="Enter your email">
-                                <textarea class="form-control" rows="3" placeholder="Write your message" required></textarea>
-                                <button class="button button-submit" type="submit">Send</button>
+                                <form class = "gform" method="POST" data-email="moral51288@gmail.com" action="https://script.google.com/macros/s/AKfycbynsn5GNMSW42AOuscmTfeVV-XZjOQdqwc1b6mn5mIv1usj4VC6CT5FXWSqJxByaKaf-g/exec">
+                                    <input name="name" type="text" class="form-control" placeholder="Enter your name" required>
+                                    <input name="email" type="email" class="form-control" placeholder="Enter your email">
+                                    <textarea name="message" class="form-control" rows="3" placeholder="Write your message" required></textarea>
+                                    <button id="submitting" class="button button-submit" type="submit">Send</button>
+                                    <div style="display:none" class="thankyou_message">
+                                        <h6>Your message was received!<br> I'll contact you as soon as possible.</h6>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -192,5 +197,6 @@
                 <li><a href=mailto:"moral51288@gmail.com" class="fs-2 p-3"><i class="bi bi-envelope"></i></a></li>
             </ul>
         </footer>
+        <script data-cfasync="false" type="text/javascript" src="form-submission.js"></script>
 </body>
 </html>
