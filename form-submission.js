@@ -56,6 +56,15 @@
     var formData = getFormData(form);
     var data = formData.data;
 
+    let userEmail = document.querySelector('input[name="email"]')
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+
+    console.log(userEmail.value, emailPattern.test(userEmail.value))
+
+    if (emailPattern.test(userEmail.value) == false){
+      alert('Please enter a valid email')
+    }
+
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
       return false;
